@@ -1,0 +1,26 @@
+package streamAPIpractice;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class Ex5 {
+
+	public static void main(String[] args) {
+    List<String> enames = Arrays.asList("rahul","sonia","prianka","sunita");
+    System.out.println(enames);
+    
+    List<String> new_enames= new ArrayList<String>();
+    Collections.sort(enames);
+    System.out.println(enames);
+    
+    
+	for(String ename:enames)  {
+    	new_enames.add(ename.toUpperCase());
+    }
+	System.out.println(new_enames);
+
+	}
+
+}
